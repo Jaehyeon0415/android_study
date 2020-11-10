@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
         ListListener listener = new ListListener();
         list1.setOnItemClickListener(listener);
     }
-    
+
     class ListListener implements AdapterView.OnItemClickListener {
         @Override
         public void onItemClick(AdapterView<?> adapterView, View view, int position, long id) {
