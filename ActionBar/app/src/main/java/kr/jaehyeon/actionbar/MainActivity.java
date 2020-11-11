@@ -50,14 +50,14 @@ public class MainActivity extends AppCompatActivity {
     // 서치 뷰의 리스너를 설정한다.
     class SearchViewListener implements SearchView.OnQueryTextListener {
         @Override
-        // 서치 뷰의 문자열이 변경될 때 마다 호출되는 메서드
+        // 키보드의 엔터 키를 누르면 호출되는 메서드
         public boolean onQueryTextSubmit(String query) {
             text2.setText(query);
             return false;
         }
 
         @Override
-        // 키보드의 엔터 키를 누르면 호출되는 메서드
+        // 서치 뷰의 문자열이 변경될 때 마다 호출되는 메서드
         public boolean onQueryTextChange(String newText) {
             text1.setText(newText);
             return false;
